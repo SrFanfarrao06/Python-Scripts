@@ -6,6 +6,13 @@ print("\n\033[93m ### CODE START ### \033[0m\n")
 
 # 👇👇👇 Coloque o seu código na linha abaixo desse comentário 👇👇👇
 
+a=1
+b=2
+c= a + b
+
+print(c)
+d= c + 5
+print(d)
 
 
 
