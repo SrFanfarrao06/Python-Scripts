@@ -6,15 +6,31 @@ print("\n\033[93m ### CODE START ### \033[0m\n")
 
 # 👇👇👇 Coloque o seu código na linha abaixo desse comentário 👇👇👇
 
-palavra_oculta = '*******'
-palavra = 'perfume'
-letra = ''
 
-while palavra_oculta != palavra:
-    letra = input('digite 1 letra: ')
-    
+senha = (f'123')
+senha_inputada = input (f'entre a senha: ')
+count_tentativas = 0
+# print(senha_inputada)
+# print(count_tentativas)
 
+# if senha == senha_inputada:
+#     print('BEM VINDO!')
+# else:
+#     print('SENHA INCORRETA')
+#     senha_inputada = input (f'entre a senha: ')
+#     count_tentativas = count_tentativas +1
+#     if count_tentativas > 3:
+#         print('Maximo de tentativas atingido. fechando programa')
 
+while senha != senha_inputada and count_tentativas < 3:
+       print('senha incorreta. Tente novamente')
+       count_tentativas = count_tentativas + 1
+       print('numero de tentativas: ', count_tentativas)
+       senha_inputada = input ('entre a senha: ')
+if senha == senha_inputada:
+    print('BEM VINDO!')
+else: count_tentativas >= 3
+print('Maximo de tentativa alcançado. Fechando o programa')
 
 
 
