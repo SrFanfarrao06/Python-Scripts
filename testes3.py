@@ -13,27 +13,17 @@ count_tentativas = 0
 # print(senha_inputada)
 # print(count_tentativas)
 
-# if senha == senha_inputada:
-#     print('BEM VINDO!')
-# else:
-#     print('SENHA INCORRETA')
-#     senha_inputada = input (f'entre a senha: ')
-#     count_tentativas = count_tentativas +1
-#     if count_tentativas > 3:
-#         print('Maximo de tentativas atingido. fechando programa')
 
 while senha != senha_inputada and count_tentativas < 3:
-       print('senha incorreta. Tente novamente')
-       count_tentativas = count_tentativas + 1
-       print('numero de tentativas: ', count_tentativas)
-       senha_inputada = input ('entre a senha: ')
+    print('SENHA INCORRETA')
+    senha_inputada = input (f'entre a senha: ')
+    count_tentativas = count_tentativas +1
 if senha == senha_inputada:
-    print('BEM VINDO!')
-else: count_tentativas >= 3
-print('Maximo de tentativa alcançado. Fechando o programa')
+        print('Bem Vindo!')
+else:
+    print('Maximo de tentativas atingido. fechando programa')
 
-
-
+    
 # 👆👆👆 Coloque o seu código na linha acima desse comentário 👆👆👆
 
 time.sleep(1)  # Exemplo de código a ser medido
