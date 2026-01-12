@@ -23,6 +23,7 @@ if senha == senha_inputada:
 else:
     print('Maximo de tentativas atingido. fechando programa')
 
+print(senha, senha_inputada)
     
 # 👆👆👆 Coloque o seu código na linha acima desse comentário 👆👆👆
 
