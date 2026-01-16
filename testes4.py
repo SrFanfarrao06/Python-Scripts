@@ -8,6 +8,7 @@ print("\n\033[93m ### CODE START ### \033[0m\n")
 
 numero1 = 'N1'
 numero2 = 'N2'
+numero3 = 'N3'
 count_tentativas = 0
 
 while True:  
@@ -16,6 +17,8 @@ while True:
         numero2 = int(input("Digite outro número inteiro: "))
         print(f"Você digitou: {numero1}")
         print(f"Você digitou: {numero2}")
+        numero3 = numero1 + numero2
+        print(numero3)
         break
     except ValueError:
         print("Entrada inválida! Por favor, digite apenas números inteiros.")
@@ -25,14 +28,12 @@ while True:
         print('Numero máximo de tentativas. Saindo do programa')
         break
         
-print(numero1)
-print(numero2)
-
-numero3 = numero1 / numero2
-
-numero3F = int(numero3)
-
-print(numero3F)
+# print(numero1)
+# print(numero2)
+# print(type(numero1))
+# print(type(numero2))
+# numero3 = numero1 + numero2
+# print(numero3)
 
 # 👆👆👆 Coloque o seu código na linha acima desse comentário 👆👆👆
 
