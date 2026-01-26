@@ -1,1 +1,1 @@
-.strip()
+    print(arquivo)
