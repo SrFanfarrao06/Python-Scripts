@@ -1,0 +1,51 @@
+import time
+
+inicio = time.perf_counter()  # Início da contagem de tempo
+
+print("\n\033[93m ### CODE START ### \033[0m\n")
+
+# 👇👇👇 Coloque o seu código na linha abaixo desse comentário 👇👇👇
+
+CPF = '407.042.117-34'
+Numero1 = CPF[0]
+Numero2 = CPF[1]
+Numero3 = CPF[2]
+Numero4 = CPF[4]
+Numero5 = CPF[5]
+Numero6 = CPF[6]
+Numero7 = CPF[8]
+Numero8 = CPF[9]
+Numero9 = CPF[10]
+
+# print(CPF)
+# print(Numero1)
+# print(Numero2)
+# print(Numero3)
+# print(Numero4)
+# print(Numero5)
+# print(Numero6)
+# print(Numero7)
+# print(Numero8)
+# print(Numero9)
+
+soma = int(Numero1)*10  + int(Numero2)*9 + int(Numero3)*8 + int(Numero4)*7 + int(Numero5)*6 + int(Numero6)*5 + int(Numero7)*4 + int(Numero8)*3 + int(Numero9)*2
+# print(soma)
+somaX10 = soma * 10
+# print(somaX10)
+resto = somaX10 % 11
+# resto = 11
+# print(resto)
+
+print('O primeiro digito do CFP é:',resto if resto <= 9 else 0)
+
+
+
+# 👆👆👆 Coloque o seu código na linha acima desse comentário 👆👆👆
+
+time.sleep(1)  # Exemplo de código a ser medido
+
+print("\n\033[92m ### CODE END SUCCESS!!! ### \033[0m\n")
+
+fim = time.perf_counter()  # Fim da contagem de tempo
+
+print(f"\033[96mTempo de execução: {fim - inicio:.2f} segundos\033[0m\n\n\n")
