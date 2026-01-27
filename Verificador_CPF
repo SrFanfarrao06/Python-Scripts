@@ -16,6 +16,8 @@ Numero6 = CPF[6]
 Numero7 = CPF[8]
 Numero8 = CPF[9]
 Numero9 = CPF[10]
+Digito1 = int(CPF[12])
+Digito2 = int(CPF[13])
 
 # print(CPF)
 # print(Numero1)
@@ -37,8 +39,12 @@ resto = somaX10 % 11
 # print(resto)
 
 print('O primeiro digito do CFP é:',resto if resto <= 9 else 0)
+print('O digito 1 é:',Digito1)
 
-
+if resto == Digito1:
+    print('CPF Validado!')
+else:
+    print('CPF Falso!')
 
 # 👆👆👆 Coloque o seu código na linha acima desse comentário 👆👆👆
 
