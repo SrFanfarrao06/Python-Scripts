@@ -41,7 +41,16 @@ resto = somaX10 % 11
 print('O primeiro digito do CFP é:',resto if resto <= 9 else 0)
 print('O digito 1 é:',Digito1)
 
-if resto == Digito1:
+
+soma2 = int(Numero1)*11  + int(Numero2)*10 + int(Numero3)*9 + int(Numero4)*8 + int(Numero5)*7 + int(Numero6)*6 + int(Numero7)*5 + int(Numero8)*4 + int(Numero9)*3 + int(Digito1)*2
+print(soma2)
+resultado2 = (soma2 * 10) % 11
+print(resultado2)
+
+
+
+
+if resto == Digito1 and resultado2 == Digito2:
     print('CPF Validado!')
 else:
     print('CPF Falso!')
